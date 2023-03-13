@@ -1,0 +1,34 @@
+{
+	"name":"[name]",
+	"children":[
+		{
+			"type": "file",
+			"name": "readme.md",
+			"content": "# [name]\n description \n\n## inputs \n\n description \n\n## outputs \n\n description "
+		},
+		{
+			"type": "file",
+			"name": "[name].spec.js",
+			"content" : "test('[name] test file', () => {\n\texpect(1+1).toBe(2);\n});"
+		},
+		{
+			"type": "file",
+			"name": "[name].js",
+			"content" : "import React from 'react';\nimport './[name].scss';\n\nlet [name] = () => {\n\treturn (\n\t\t\t<h1>[name]</h1>\n\t\t);\n}\n\nexport default [name];"
+		},
+		{
+			"type": "file",
+			"name": "[name]Container.js",
+			"content" : "import React from 'react';\nimport [name] from './[name]';\n\nlet [name]Container = (props) => {\n\tlet methods = {\n\t\t...props\n\t}\n\treturn (\n\t\t<[name] {...methods} />\n\t)\n}\n\nexport default [name]Container;"
+		},
+		{
+			"type": "file",
+			"name": "[name].scss"
+		},
+		{
+			"type": "file",
+			"name": "package.json",
+			"content":"{\n\t\"name\": \"[name]-container\",\n\t\"version\": \"0.0.1\",\n\t\"main\": \"./[name]Container.js\"\n}"
+		}
+	]
+}

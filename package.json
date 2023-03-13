@@ -1,0 +1,16 @@
+{
+  "name": "file-generator",
+  "version": "0.2.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit",
+    "generate": "node index.js"
+  },
+  "author": "baamelyoussef",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  }
+}
