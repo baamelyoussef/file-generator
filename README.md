@@ -138,8 +138,3 @@ generator.exec([
   ...
 ]);
 ```
-
-## Next
-- For structure proprety `content` will be able accept path for file templates too
-- Improuve CLI experience
-- Write proper documentation
